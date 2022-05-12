@@ -21,11 +21,13 @@ body {
 }
 
 .header {
+  width: 100%;
   border-radius: 5px;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #fff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+  position: fixed;
 }
 
 .header-container {
@@ -43,10 +45,17 @@ body {
   font-size: 18px;
   background: transparent;
   cursor: pointer;
+  border-radius: 5px;
+}
+
+.site-mode-btn:hover{
+  opacity: 0.8;
+  background-color: rgba(128, 128, 128, 0.333);
 }
 
 /* main */
 .main {
+  padding-top: 160px; 
 }
 .main-container {
   padding-top: 20px;
@@ -124,6 +133,9 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .site-mode-btn{
+    font-size: 15px;
+  }
 
   .search-form {
     margin-bottom: 10px;
@@ -135,4 +147,5 @@ body {
     display: flex;
     flex-direction: column;
   }
+  
 }
