@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.header {
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-head-text {
+  font-size: 27px;
+}
+.site-head-p {
+  font-size: 18px;
+}
+
+/* main */
+.main {
+}
+.main-container {
+  padding-top: 20px;
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-form {
+}
+.search-input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 100px;
+  border: 1px solid rgba(128, 128, 128, 0.188);
+  border-radius: 5px;
+}
+
+.region {
+  padding: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.188);
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  font-size: 13px;
+}
+/* Counter */
+
+.countries-container {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+}
+.counter-content {
+  width: 265px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-name {
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+.counter-text {
+  padding-left: 15px;
+  padding-bottom: 5px;
+  color: #000;
+  font-size: 15px;
+}
+
+.counter-text-bottom {
+  padding-bottom: 15px;
+}
+
+.counter-span {
+  color: grey;
+}
+
+
+
+@media(max-width:589px) {
+    .counter-content{
+        margin-right: auto;
+        margin-left: auto;
+      
+    }
+}
+
+
+@media(max-width:500px){
+   
+
+    .search {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .search-form{
+          margin-bottom: 10px;
+      }
+}
+
+
+@media(max-width:406px){
+    .header-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
